@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.app {
+  display: flex;
+}
+
+.cube-container {
+  display: grid;
+  grid-template-columns: repeat(10, 55px);
+  gap: 5px;
+  align-items: center;
+}
+
+.cube-column {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.cube {
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+  background-color: darkgray;
+  border: 1px solid #000;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3px;
+}
+
+.active-cube {
+  transform: scale(5);
+  z-index: 1;
+  position: relative;
+}
